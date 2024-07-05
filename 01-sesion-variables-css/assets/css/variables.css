@@ -1,0 +1,31 @@
+/* 
+    Dentro de root definimos
+    nuestras variables , con un scope o ambito
+    GLOBAL.
+*/
+:root{
+
+    /* Variables de tipografias */
+    --fuente-primaria:'Poppins', sans-serif;
+    --fuente-secundaria:'Roboto', sans-serif;
+    --fz-titulo-principal : 36px;
+    --fz-titulo-secundario : 28px;
+    --fz-parrafos : 16px;
+    --fz-pie-pagina: 14px;
+    --fz-nav-link:16px;
+    
+    /* Varibales de color */
+    --color-principal:#652EC7;
+    --color-parrafos:#707070;
+    --color-fondo-seccion:#303030;
+    --color-blanco:#fff;
+    --color-negro:#000;
+    --color-line:#ddd;
+
+    /* Variables de estructura */
+    --contenedor-90:90%;
+    --contenedor-60:60%;
+    --padding-general:0.5rem;
+    --margin-general:0.5rem;
+
+}
