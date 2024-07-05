@@ -3,29 +3,11 @@
 ![SASS](sass.png)
 
 # APUNTES SASS
-Debemos tener instalado Node.js y NPM para saber si esta instalado se escribe en el terminal
+Debemos tener instalada la extensión `Live Sass Compiler` en Visual Studio Code, URL para bajar la extensión :
 
-- node --version
-- npm --version
+`https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass`
 
 
-## INSTALANDO SASS
-
-- sudo gem install sass `href`
-- sudo npm install -g sass
-
-## CREAMOS UN PROYECTO CON SASS
-
-- Creo Directorio, mkdir `test_sass`
-- Me posiciono dentro de, `test_sass cd test_sass/`
-- Creo `touch` para crear archivos touch index.html styles.css styles.scss
-- Para probar la compilacion sass --watch styles.scss:styles.css
-- Para terminar la compilación `Ctrl-C`
-
-## FRAGMENTOS DE CODIGO
-- Crear directorios en el terminal `mkdir`  
-- Crea archivos en el terminal `touch`
-- Nos desplazamos dentro los directorios `cd ..`
 
 ## SASS/
 ~~~
@@ -97,7 +79,10 @@ sass/
 - @import 'themes/admin';
 
 ## REALIZAR LA COMPILACIÓN
-- `sass --watch styles.scss:styles.css`
+- Para realizar la compilación del archivo `.scss`, se debe hacer click en `Watch Sass`.
+
+![SASS](sass-watch.png)
+
 
 ## BEM / Bloque, Elemento, Modificador.
 
