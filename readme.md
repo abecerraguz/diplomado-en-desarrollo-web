@@ -13,9 +13,23 @@ Si aun tienes dudas del manejo de HTML y CSS te invito a que revises mi material
 
 # APUNTES SASS
 
-Debemos tener instalada la extensión `Live Sass Compiler` en Visual Studio Code, URL para bajar la extensión :
+Antes de comenzar a trabajar con Sass (Syntactically Awesome Stylesheets), es esencial preparar tu entorno de desarrollo para facilitar el proceso de compilación y obtener una experiencia más fluida. Una herramienta altamente recomendada para este propósito es la extensión "Live Sass Compiler" de Visual Studio Code. Esta extensión permite compilar archivos Sass/SCSS a CSS en tiempo real, lo que agiliza el flujo de trabajo y permite ver los cambios de estilo de inmediato.
 
-`https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass`
+Para instalar la extensión "Live Sass Compiler", sigue estos sencillos pasos:
+
+1. Abre Visual Studio Code: Si aún no tienes instalado Visual Studio Code, descárgalo e instálalo desde code.visualstudio.com.
+
+2. Accede a la extensión: Haz clic en el icono de extensiones en la barra lateral izquierda o usa el atajo de teclado `Ctrl+Shift+X` (o `Cmd+Shift+X` en Mac).
+
+3. Busca "Live Sass Compiler": En la barra de búsqueda, escribe "Live Sass Compiler" y presiona Enter.
+
+4. Instala la extensión: Encuentra la extensión en los resultados de búsqueda y haz clic en el botón de instalación.
+
+5. Reinicia Visual Studio Code: Después de la instalación, es recomendable reiniciar Visual Studio Code para asegurar que la extensión se active correctamente.
+
+Una vez instalada la extensión, podrás compilar tus archivos Sass/SCSS a CSS de manera automática y en tiempo real, simplificando el proceso de desarrollo y permitiéndote concentrarte en escribir código limpio y eficiente. Con esta configuración, estarás listo para aprovechar al máximo las capacidades de Sass y mejorar la calidad de tus proyectos de estilo.
+
+[Puedes instalar la extensión desde aquí](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 
 ## QUE ES SASS Y PARA QUE SIRVE
 Sass, que significa Syntactically Awesome Stylesheets, es un preprocesador de CSS que añade funcionalidades avanzadas a los estilos CSS, haciéndolos más poderosos y fáciles de mantener. Creado por Hampton Catlin y desarrollado por Natalie Weizenbaum, Sass permite utilizar características que no están disponibles en CSS tradicional, como variables, anidación, mixins, herencia y operadores.
