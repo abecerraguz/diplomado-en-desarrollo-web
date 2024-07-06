@@ -2,10 +2,125 @@
 
 ![SASS](sass.png)
 
+# IMPORTANTE
+Antes de sumergirse en el mundo de Sass (Syntactically Awesome Stylesheets), es esencial tener un sólido conocimiento de CSS (Cascading Style Sheets). CSS es el lenguaje fundamental para describir la presentación de documentos HTML y es una habilidad básica para cualquier desarrollador web. Comprender los conceptos y la sintaxis de CSS, como selectores, propiedades, valores, y cómo se aplican los estilos a los elementos HTML, es crucial. Esta base no solo facilitará la transición a Sass, sino que también permitirá aprovechar al máximo las características avanzadas que Sass ofrece, como variables, anidación, y mixins. Por lo tanto, dominar CSS es un prerrequisito indispensable para aprender y utilizar Sass de manera efectiva.
+
+Si aun tienes dudas del manejo de HTML y CSS te invito a que revises mi material de css:
+
+1. [Librería y Referencia de HTML y CSS](https://abecerraguz.github.io/libreria-html/)
+2. [Guía paso a paso cómo hacer una página Web](https://github.com/abecerraguz/libreria-html-II)
+
+
 # APUNTES SASS
+
 Debemos tener instalada la extensión `Live Sass Compiler` en Visual Studio Code, URL para bajar la extensión :
 
 `https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass`
+
+## QUE ES SASS Y PARA QUE SIRVE
+Sass, que significa Syntactically Awesome Stylesheets, es un preprocesador de CSS que añade funcionalidades avanzadas a los estilos CSS, haciéndolos más poderosos y fáciles de mantener. Creado por Hampton Catlin y desarrollado por Natalie Weizenbaum, Sass permite utilizar características que no están disponibles en CSS tradicional, como variables, anidación, mixins, herencia y operadores.
+
+## ¿Para qué sirve Sass?
+
+1. `Variables`: Permiten almacenar valores que se utilizan repetidamente, como colores, tamaños de fuente o márgenes, lo que facilita la gestión y el cambio de estos valores en un solo lugar.
+
+```scss
+
+  $primary-color: #3498db;
+  body {
+    color: $primary-color;
+  }
+
+```
+
+2. `Anidación`: Permite escribir CSS de una manera que refleja la estructura HTML, mejorando la legibilidad y organización del código.
+
+```scss
+
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      li { display: inline-block; }
+      a {
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+      }
+    }
+
+```
+
+3. `Mixins`: Son bloques de código que se pueden reutilizar en cualquier parte del archivo Sass, lo que ayuda a reducir la repetición y a mantener el código limpio.
+
+```scss
+
+    @mixin border-radius($radius) {
+      -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      border-radius: $radius;
+    }
+    .box { @include border-radius(10px); }
+
+```
+
+4. `Extensión/Inherencia`: Permite compartir un conjunto de reglas CSS entre diferentes selectores, evitando la duplicación de código.
+
+```scss
+
+  .message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+  .success { @extend .message; border-color: green; }
+  .error { @extend .message; border-color: red; }
+
+```
+
+5. `Operadores`: Permiten realizar cálculos matemáticos directamente dentro del código CSS.
+
+```scss
+
+  .container {
+    width: 100% / 3;
+  }
+
+```
+
+6. Referencia al Selector Padre.
+
+El uso más común del & es referenciar al selector padre en un contexto anidado. Esto es útil para aplicar pseudo-clases o pseudo-elementos, y mantener el código más limpio y legible.
+
+```scss
+
+    button {
+      &:hover {
+        background-color: blue;
+      }
+      &:active {
+        background-color: red;
+      }
+    }
+
+```
+
+Este código Sass se compila en css:
+
+```css
+
+  button:hover {
+    background-color: blue;
+  }
+  button:active {
+    background-color: red;
+}
+
+```
+
+
+Sass mejora significativamente la productividad y la organización del código CSS, haciéndolo más eficiente y fácil de mantener, especialmente en proyectos grandes y complejos.
 
 
 
@@ -80,7 +195,6 @@ sass/
 
 ## REALIZAR LA COMPILACIÓN
 - Para realizar la compilación del archivo `.scss`, se debe hacer click en `Watch Sass`.
-
 ![SASS](sass-watch.png)
 
 
