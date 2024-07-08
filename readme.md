@@ -5,13 +5,16 @@
 # IMPORTANTE
 Antes de sumergirse en el mundo de Sass (Syntactically Awesome Stylesheets), es esencial tener un sólido conocimiento de CSS (Cascading Style Sheets). CSS es el lenguaje fundamental para describir la presentación de documentos HTML y es una habilidad básica para cualquier desarrollador web. Comprender los conceptos y la sintaxis de CSS, como selectores, propiedades, valores, y cómo se aplican los estilos a los elementos HTML, es crucial. Esta base no solo facilitará la transición a Sass, sino que también permitirá aprovechar al máximo las características avanzadas que Sass ofrece, como variables, anidación, y mixins. Por lo tanto, dominar CSS es un prerrequisito indispensable para aprender y utilizar Sass de manera efectiva.
 
-Si aun tienes dudas del manejo de HTML y CSS te invito a que revises mi material de css:
+Si aun tienes dudas del manejo de HTML y CSS te invito a que revises mi material de HTML5 y CSS3:
 
-1. [Librería y Referencia de HTML y CSS](https://abecerraguz.github.io/libreria-html/)
-2. [Guía paso a paso cómo hacer una página Web](https://github.com/abecerraguz/libreria-html-II)
+1. [Librería y Referencia de HTML y CSS.](https://abecerraguz.github.io/libreria-html/)
+2. [Guía paso a paso cómo hacer una página Web.](https://github.com/abecerraguz/libreria-html-II)
+3. [Videos Tutoriales Ejercicio HTML5 CSS3:](https://drive.google.com/drive/folders/1RF8_Xwe4taq1tugOlBXXAsH8Q-YRyKeE?usp=sharing)
+    - [Wireframe Ejercicio HTML5 CSS3.](https://xd.adobe.com/view/f3b0e129-aaf4-4051-9f87-97967e6ee65e-a6e3/)
+    - [Wireframe uso de grilla.](https://xd.adobe.com/spec/c4bab8ba-c793-48cc-46e8-53b02f2e266b-b28b/specs/)
 
 
-# APUNTES SASS
+## APUNTES SASS
 
 Antes de comenzar a trabajar con Sass (Syntactically Awesome Stylesheets), es esencial preparar tu entorno de desarrollo para facilitar el proceso de compilación y obtener una experiencia más fluida. Una herramienta altamente recomendada para este propósito es la extensión "Live Sass Compiler" de Visual Studio Code. Esta extensión permite compilar archivos Sass/SCSS a CSS en tiempo real, lo que agiliza el flujo de trabajo y permite ver los cambios de estilo de inmediato.
 
@@ -138,9 +141,14 @@ Sass mejora significativamente la productividad y la organización del código C
 
 
 
-## SASS/
+## SASS EL PATRON 7/1 
+
+Volvamos a la arquitectura, ¿de acuerdo? Normalmente suelo trabajar con lo que yo llamo el patrón 7-1: 7 carpetas, 1 archivo. Basicamente, tienes todas las partes almacenadas en 7 carpetas diferentes, y un único archivo en el directorio raíz (normalmente llamado main.scss) y que importa todas estas partes para luego compilarlas en una hoja de estilo CSS.
+
+[Puedes ver el Patron 7/1](https://sass-guidelin.es/es/#arquitectura)
+
 ~~~
-https://sass-guidelin.es/es/#arquitectura
+
 
 sass/
 |
@@ -187,7 +195,8 @@ sass/
 |   …                    # Etc.
 |
 |
-`– main.scss             # Archivo principal de Sass
+
+– main.scss             # Archivo principal de Sass
 ~~~
 
 ## PARA IMPORTAR LOS PARCIALES
