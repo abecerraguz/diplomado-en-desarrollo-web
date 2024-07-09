@@ -6,5 +6,10 @@
     cursor: pointer;
     font-family: $primary-font;
     text-transform: uppercase;
+    &--big{
+      font-size: $font-size-large;
+    }
+
+    
   }
   
