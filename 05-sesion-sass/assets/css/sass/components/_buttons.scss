@@ -9,7 +9,22 @@
     &--big{
       font-size: $font-size-large;
     }
+    &--large{
+      font-size: $font-size-medium;
+    }
 
-    
+    &--big,
+    &--large{
+      font-weight: $primary-font-bold;
+      padding: 20px 100px;
+    }
+
+    &--medium,
+    &--small{
+      font-size: $font-size-medium;
+      padding: 10px 20px;
+    }
+
+
   }
   

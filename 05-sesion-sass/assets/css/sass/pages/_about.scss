@@ -1,0 +1,153 @@
+.section-wraper{
+    font-family: $primary-font;
+    font-weight: $primary-font-regular;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header{ 
+
+    @extend .section-wraper;
+    background-color: $white;
+
+    &__logo-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 70px;
+    }
+    &__logo{
+        height: auto;
+        margin: 0 0 0 70px;
+        width: 200px;
+    }
+}
+
+.banner{
+
+    background-color:$jean-bean;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size-large;
+    font-family: $primary-font;
+    font-weight: $primary-font-regular;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+
+    &__title{
+        font-weight: $primary-font-extra-light;
+        &--highlighted-text{
+            font-weight: $primary-font-bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.info{
+
+    @extend .section-wraper;
+    background-color:$taupe-gray;
+    color: $white;
+    padding: 70px 0 50px;
+    text-align: center;
+    width: 100%;
+    &--light{
+        background-color: $white;
+        color: $granite-gray;
+    }
+    &__banner{
+        height: auto;
+        width: 60%;
+    }
+    &__title{
+        font-size: $font-size-medium;
+        font-weight: $primary-font-bold;
+        margin:30px 0 0;
+    }
+    &__text{
+        margin: 30px 20% 0;
+        text-align: left;
+    }
+}
+
+.staff{
+    @extend .section-wraper;
+    background-color: $jean-bean;
+    color:$white;
+    font-size: $font-size-large;
+    font-weight: $primary-font-bold;
+    padding: 50px 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.staff-members{
+    @extend .section-wraper;
+    background-color: $white;
+    color:$granite-gray;
+    padding: 70px 0 80px;
+    text-align: center;
+    &__box{
+        margin: 0 auto 40px;
+        width: 60%;
+    }
+
+    &__box:last-child{
+        margin:0 auto;
+    }
+    &__avatar{
+        height: auto;
+        width: 300px;
+    }
+    &__name{
+        font-size: $font-size-medium;
+        font-weight: $primary-font-bold;
+        margin:20px 0 0;
+    }
+    &__bio{
+        line-height: 1.5;
+        margin:20px 0 0;
+        text-align: left;
+    }
+}
+
+.contact{
+    @extend .section-wraper;
+    background-color: $jean-bean;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    &__title{
+        font-size:$font-size-medium-dos;
+        font-weight:$raleway-bold;
+        color: $white;
+    }
+}
+
+.footer{
+    @extend .section-wraper;
+    background-color: $granite-gray;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    &__logo-wrapper{
+        @extend .section-wraper;
+        text-align: center;
+    }
+    &__logo{
+        height: auto;
+        width: 150px;
+    }
+}
+    
