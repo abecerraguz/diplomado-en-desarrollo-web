@@ -1,0 +1,30 @@
+.card{
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem 0;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include vertical-gradient( $black, $black-90 );
+    &__icon{
+        width: 80px;
+        height:80px;
+        border-radius: 100%;
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $icon-background;
+        border: 0.3rem solid $yellow;
+        i{
+          font-size: $font-size-icon;  
+          color:$yellow;
+        }
+    }
+   
+}

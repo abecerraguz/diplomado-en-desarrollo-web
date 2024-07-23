@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    max-width:$max-width-70;
+    margin:0 auto;
+    padding: 0 0.5rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+/*
+    de PX a REM
+    1rem ----> 16px
+    X          5px
+*/
+
+.col{
+    width: $width-col * 1;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-12{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+
