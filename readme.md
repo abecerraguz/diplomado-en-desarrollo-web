@@ -12,6 +12,7 @@ Si aun tienes dudas del manejo de HTML y CSS te invito a que revises mi material
 3. [Videos Tutoriales Ejercicio HTML5 CSS3:](https://drive.google.com/drive/folders/1RF8_Xwe4taq1tugOlBXXAsH8Q-YRyKeE?usp=sharing)
     - [Wireframe Ejercicio HTML5 CSS3.](https://xd.adobe.com/view/f3b0e129-aaf4-4051-9f87-97967e6ee65e-a6e3/)
     - [Wireframe uso de grilla.](https://xd.adobe.com/spec/c4bab8ba-c793-48cc-46e8-53b02f2e266b-b28b/specs/)
+    - [Wireframe Ejercicio X-GAMES](https://xd.adobe.com/view/f938458f-1cad-4ac6-81d2-096d58e20fe9-ac6b/)
 
 
 ## APUNTES SASS
