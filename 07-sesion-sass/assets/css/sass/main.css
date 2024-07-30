@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*
 
@@ -381,4 +382,40 @@ ul {
   margin: 1rem 0;
   font-weight: 400;
   font-size: 16px;
+}
+
+.brand-wrapper.santiago {
+  position: relative;
+}
+
+.santiago .head-sponsor {
+  margin-bottom: 70px;
+}
+
+.brand-wrapper.santiago:after {
+  content: "<img src='/resizer/b4TgrKoXRHalRmLhtOn-F_Kv_OM=/arc-photo-metroworldnews/arc2-prod/public/IJZH3Y7GNZGCJP3FNSQOGE5OT4.png' alt='Olimpiadas París 2024'>";
+  width: 340px;
+  height: 200px;
+  /* background-color: red; */
+}
+
+.brand-wrapper.santiago img:first-child {
+  border-radius: none;
+  border: none;
+}
+
+.brand-wrapper.santiago img {
+  border-radius: 5px;
+  border: 1px solid rgba(204, 204, 204, 0.368627451);
+}
+
+.santiago .top-table-list-section-medium hr {
+  background-color: rgba(231, 235, 231, 0.389);
+}
+
+.santiago .medium-promo .medium-promo-wrapper {
+  clear: both;
+  content: "";
+  display: table;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,135 @@
+.nav{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: $grey;
+    padding: 1rem 0;
+
+    &__container{
+        @extend .container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+// Hola
+    &__brand{
+        display: block;
+        width: 200px;
+        height: 56px;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__link{
+        display: flex;
+        li{
+            border-right: 1px solid $black-90;
+        }
+        li:last-child{
+            border-right:none;
+        }
+        li a{
+            color:$blue;
+            text-decoration: none;
+            font-size: $font-size-normal;
+            display: inline-block;
+            padding: 0 0.5rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+        }
+        li a:hover{
+            color:$black-90;
+        }
+
+     
+    }
+}
+
+.header{
+    width: 100%;
+    height: 400px;
+    background: url('../../img/encabezado.png') $black-90;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+
+    &__container{
+        @extend .container;
+        height: 400px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title{
+        font-size: 48px;
+        color: $blue;
+        font-family: $oswald;
+        font-weight:$roboto-bold;
+        line-height: 55px;
+        span{
+            color: $white;
+            font-size: 60px;
+        }
+    }
+}
+
+.descripcion{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: $black-90;
+    p{
+        font-family: $roboto;
+        font-weight: $roboto-regular;
+       font-size:$font-size-normal;
+       margin-bottom: 1rem;
+       line-height: 160%; 
+    }
+    &__img{
+        width: 100%;
+        height: 316px;
+        object-fit: cover;
+        @include border-radius(10px);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+.categorias{
+    width: 100%;
+    height: auto;
+    background-color: $blue-deep;
+    padding: 1rem 0 2rem 0;
+    h2{
+        font-family: $oswald;
+        color: $white;
+        font-size: $font-size-xx-large;
+        text-align: center;
+    }
+    &__container{
+       width:$max-width-60; 
+       height: auto;
+       margin: 0 auto;
+       overflow: hidden;
+    }
+}
+
+.galeria{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 2rem 0 ;
+    background-color:$black-90 ;
+}
+
+.footer{
+    background-color: $blue-deep;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    p{
+        text-align: center;
+        font-size: $font-size-small;
+        margin: 1.5rem 0;
+    }
+}

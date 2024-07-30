@@ -1,0 +1,35 @@
+.card{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+  @include border-radius(10px);
+  padding-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  &__icon{
+    max-width: 50%;
+  }
+  &__title{
+    font-size: $font-size-normal;
+    text-transform: uppercase;
+  }     
+}
+
+.cardGallery{
+    width: 100%;
+    height: auto;
+    // background-color: rgba(255, 255, 255, 0.056);
+    border-radius: 0.3rem;
+    text-align: center;
+    &__img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.3rem;
+    }
+}

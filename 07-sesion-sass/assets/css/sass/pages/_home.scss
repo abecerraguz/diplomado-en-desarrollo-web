@@ -11,16 +11,6 @@
 
     &__lista{
 
-        // @include breakpoint(xxs){
-        //     list-style: none;
-        //     display: block;
-        //     margin: 0.5rem 0;
-        //     flex-direction: column;
-        //     justify-content: flex-start;
-        //     align-items: center;
-        // }
-
-
         @include breakpoint(xs){
             list-style: none;
             display: block;
@@ -53,20 +43,6 @@
         }
 
         li a{
-
-            // @include breakpoint(xxs){
-            //     color:$yellow;
-            //     text-decoration: none;
-            //     text-transform: uppercase;
-            //     display: inline-block;
-            //     padding: 0 1rem;
-            //     border-bottom:1px solid $yellow-80;
-            //     border-right: none;
-            //     font-size: 1rem;
-            //     text-align: left;
-            //     display: block;
-            // }
-  
             @include breakpoint(xs){
                 color:$yellow;
                 text-decoration: none;
@@ -174,6 +150,47 @@
         font-weight: $roboto-regular;
         font-size: $font-medium;
     }
+}
+
+
+.brand-wrapper.santiago {
+    position: relative;
+}
+.santiago .head-sponsor {
+    margin-bottom: 70px;
+}
+.brand-wrapper.santiago:after {
+    content: "<img src='/resizer/b4TgrKoXRHalRmLhtOn-F_Kv_OM=/arc-photo-metroworldnews/arc2-prod/public/IJZH3Y7GNZGCJP3FNSQOGE5OT4.png' alt='Olimpiadas París 2024'>";
+    // position: absolute;
+    // top: 0;
+    // left: 37%;
+    width: 340px;
+    height: 200px;
+    /* background-color: red; */
+    // background-image: url(/resizer/b4TgrKoXRHalRmLhtOn-F_Kv_OM=/arc-photo-metroworldnews/arc2-prod/public/IJZH3Y7GNZGCJP3FNSQOGE5OT4.png);
+    // background-repeat: no-repeat;
+    // background-size: 115px;
+    // background-position-y: 16px;
+    // background-position-x: center;
+}
+.brand-wrapper.santiago img:first-child {
+    border-radius: none;
+    border: none
+}
+.brand-wrapper.santiago img {
+    border-radius: 5px;
+    border: 1px solid #cccccc5e;
+}
+
+.santiago .top-table-list-section-medium hr {
+    background-color: rgba(231, 235, 231, 0.389);
+}
+
+.santiago .medium-promo .medium-promo-wrapper {
+    clear: both;
+    content: "";
+    display: table;
+    width: 100%;
 }
 
 
