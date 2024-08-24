@@ -1,0 +1,59 @@
+.button{
+    display: block;
+    border: none;
+    padding:0.8rem 2.5rem;
+    cursor: pointer;
+    &__orange{
+        background-color: $orange;
+        transition: all 0.3s ease-in-out;
+        color:$white;
+        font-weight: 600;
+    }
+    &__orange:hover{
+        background-color: $grafito;
+        transition: all 0.3s ease-in-out;
+        color:$white;
+        font-weight: 600;
+    }
+    &__orange--inlineBlock{
+        background-color: $orange;
+        transition: all 0.3s ease-in-out;
+        color:$white;
+        font-weight: 600;
+        display: inline-block;
+    }
+    &__orange--inlineBlock:hover{
+        background-color: $grafito;
+        transition: all 0.3s ease-in-out;
+        color:$white;
+        font-weight: 600;
+        display: inline-block;
+    }
+}
+
+.posts_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0 0 2rem 0;
+}
+
+/*
+  @extend .button;
+    background-color: $orange;
+    transition: all 0.3s ease-in-out;
+    color:$white;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    &:hover{
+        background-color: $grey-deep;
+        color:$grafito;
+        font-weight: 600;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+    }
+*/
