@@ -1,0 +1,106 @@
+.noticia {
+    width: 100%;
+    &__linkActive {
+        color: $dark-grey;
+        font-size: $font-size-x-small;
+        margin-bottom: 1.5rem;
+        a {
+            color: $dark-grey;
+        }
+        span {
+            color: $turquoise;
+            a {
+                color: $turquoise;
+            }
+        }
+    }
+    &__name {
+        color: $turquoise;
+        font-size: $font-size-large;
+        font-weight: $regular;
+        margin: 1.5rem 0;
+    }
+    &__mainImg {
+        width: 100%;
+    }
+    &__nameWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__share {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        i{
+            font-size: 1.3rem;
+            color: $dark-grey;
+        }
+    }
+    &__mainTitle {
+        @include title($font-size-xxx-large, $black);
+    }
+    &__lead {
+        font-size: $font-size-large;
+    }
+    p { 
+        margin: 1.5rem 0 1.5rem 0;
+        text-align: left;
+        line-height: 160%;
+    }
+    &__imgWrapper {
+        text-align: center;
+        @extend .container;
+        max-width: $max-width-77;
+    }
+    &__secondaryImg {
+        margin: 1.5rem 0;
+    }
+    &__imgCaption {
+        font-size: $font-size-x-small;
+        margin-bottom: 1rem;
+        font-weight: $regular;
+    }
+    &__quote {
+        color: $turquoise;
+        font-size: $font-size-x-large;
+        font-family: $roboto;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.aside {
+    margin-left: 1.5rem;
+    .card {
+        border-right: none;
+        border-bottom: 1px solid $grey;
+        &--last {
+            border-bottom: none;
+            opacity: 0.6;
+        }
+        p {
+            margin-top: 0;
+            text-align: left;
+        }
+    }
+    &__destacados {
+        background-color: $light-grey;
+        padding: 1rem 3rem;
+        text-align: center;
+        font-weight: $regular;
+    }
+}
+
+.logos {
+    padding: 2rem 0;
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        list-style-type: none;
+    }
+}

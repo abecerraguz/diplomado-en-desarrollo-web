@@ -10,11 +10,14 @@ $greenBlue:#009BA5;
 $grey:#eeeeee;
 $grey-light:#F1F1F1;
 $grey-deep:#cacaca;
+$light-grey: #F1F1F1;
 $orange:#FD5000;
 $orange-light:#f99b6f;
 $icon-background:#5C5C5C;
 $grafito:#16173A;
 $yellow:#FFED00;
+$dark-grey: #8B8B8C;
+$turquoise:#009BA5;
 
 // FONT
 $open-sans: "Open Sans", sans-serif;
@@ -28,6 +31,8 @@ $open-sans-light:200;
 $roboto-bold:700;
 $roboto-regular:400;
 $roboto-light:200;
+$regular: 400;
+$bold: 700;
 
 // FONT SIZE
 $font-size-xx-large:60px;
@@ -35,6 +40,15 @@ $font-size-x-large:48px;
 $font-size-mobile-x-large:30px;
 $font-size-mobile-xx-large:18px;
 $font-large:32px;
+
+$font-size-xxx-large: 48px;
+$font-size-xx-large: 32px;
+$font-size-x-large: 24px;
+$font-size-large: 18px;
+$font-size-medium:15px;
+$font-size-small:14px;
+$font-size-x-small: 13px;
+$font-size-xx-small: 10px;
 
 $font-regular:1rem;
 $font-regular-small:0.8rem;
@@ -56,6 +70,7 @@ $max-width-100:100%;
 $max-width-90:90%;
 $max-width-80:80%;
 $max-width-70:70%;
+$max-width-77: 77%;
 $max-width-60:60%;
 $max-width-50:50%;
 $max-width-40:40%;

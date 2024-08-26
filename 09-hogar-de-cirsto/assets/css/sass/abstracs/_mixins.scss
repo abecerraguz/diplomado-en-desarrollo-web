@@ -40,3 +40,20 @@
 @mixin vertical-gradient( $start-color, $end-color ) {
     background: linear-gradient(to top, $start-color, $end-color);
 }
+
+@mixin bgSocial($bgColor) {
+  width: 20px;
+  height: 20px;
+  background-color: $bgColor;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+}
+
+@mixin title($size, $color) {
+  font-family: $roboto;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $color;
+  font-size: $size;
+}
